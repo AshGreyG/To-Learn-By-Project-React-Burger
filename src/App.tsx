@@ -1,8 +1,10 @@
 import React from "react";
 
+import Header from "./sections/Header.tsx";
+
 function App() {
   return (
-    <h1 className="underline">Hello Vi</h1>
+    <Header />
   );
 }
 

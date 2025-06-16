@@ -1,23 +1,22 @@
 import { cn } from "../utils";
 import { LucideIcon } from "lucide-react";
 
-interface IconButtonProps {
+interface IconButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   icon: LucideIcon
   className?: string;
   count?: number;
-  onClick?: () => void;
 }
 
 function IconButton({
   icon: Icon, // Actually Icon is the parameter, and icon is the property
   className,
   count,
-  onClick
+  ...props
 }: IconButtonProps) {
   return (
     <button 
       className={cn("relative group cursor-pointer", className!)}
-      onClick={onClick}
+      onClick={props.onClick}
     >
       <div className={
         `absolute -inset-2 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl blur

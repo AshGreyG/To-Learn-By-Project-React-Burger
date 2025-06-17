@@ -1,10 +1,14 @@
 import React from "react";
 
 import Header from "./sections/Header.tsx";
+import Hero from "./sections/Hero.tsx";
 
 function App() {
   return (
-    <Header />
+    <div className={``}>
+      <Header />
+      <Hero />
+    </div>
   );
 }
 

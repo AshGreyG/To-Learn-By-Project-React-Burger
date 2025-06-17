@@ -1,4 +1,5 @@
 import { ArrowRight, Clock } from "lucide-react";
+import hamburgerImage from "../assets/Hamburger-pana.png";
 
 function Hero() {
   return (
@@ -111,16 +112,20 @@ function Hero() {
 
           {/* Circle */}
           <div className={`absolute inset-0 flex items-center justify-center`}>
-            <div className={`w-[120%] h-[120%] border-2 border-dashed border-red-200 rounded-full`}/>
-            <div className={`w-[90%] h-[90%] border-2 border-dashed border-red-200 rounded-full`}/>
+            <div className={`w-[80%] h-[90%] border-2 border-dashed border-red-200 rounded-full`}/>
+            <div className={`absolute w-[65%] h-[70%] border-2 border-dashed border-red-200 rounded-full`}/>
           </div>
 
           {/* Burger Image */}
           <div className={`relative group cursor-pointer transform-gpu transition-all duration-300 
            hover:scale-105 hover:rotate-6`}
           >
-            <div className={`relative`}>
-              {/* <img src={} /> */}
+            <div className={`relative p-10`}>
+              <img
+                src={hamburgerImage} 
+                className={`w-full h-full object-contain drop-shadow-2xl transform transition-transform
+                  duration-500 hover:rotate-12`}
+              />
             </div>
           </div>
         </div>

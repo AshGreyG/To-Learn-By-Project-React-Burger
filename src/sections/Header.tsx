@@ -29,7 +29,7 @@ function Header() {
       className={`fixed w-full top-0 z-50 transition-all duration-300
        ${
          scrolled
-           ? "py-4 bg-white/80 backdrop-blur-lg shadow-[0_8px_30px_rgb(0,0,0.12)]"
+           ? "py-4 bg-white/80 backdrop-blur-lg shadow-2xl"
            : "py-6 bg-transparent"
        }`}
     >
